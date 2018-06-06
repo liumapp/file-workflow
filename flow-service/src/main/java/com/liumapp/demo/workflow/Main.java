@@ -4,11 +4,13 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 /**
- * Created by liumapp on 9/28/17.
- * E-mail:liumapp.com@gmail.com
- * home-page:http://www.liumapp.com
+ * @author liumapp
+ * @file Main.java
+ * @email liumapp.com@gmail.com
+ * @homepage http://www.liumapp.com
+ * @date 6/6/18
  */
-@SpringBootApplication(scanBasePackages = {"com.liumapp"})
+@SpringBootApplication
 public class Main {
 
     public static void main(String[] args) {
