@@ -17,7 +17,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("")
 public class IndexController {
 
-    @RequestMapping("/info")
+    @RequestMapping("info")
     public String handleForm (@RequestBody User user) {
         return JSON.toJSONString("success");
     }
