@@ -28,6 +28,7 @@
 </template>
 
 <script>
+import util from '@/libs/util';
 export default {
   name: 'HelloWorld',
   data () {
@@ -58,11 +59,6 @@ export default {
       checkMsgRule: {
         name: [
           {
-            required: true,
-            message: 'please fill in the user name',
-            trigger: true
-          },
-          {
             type: 'string',
             min: 5,
             max: 10,
@@ -83,6 +79,7 @@ export default {
     handleSubmit (name) {
       this.$refs[name].validate((valid) => {
         if (valid) {
+
           this.$Message.success('Success!');
         } else {
           this.$Message.error('Fail!');

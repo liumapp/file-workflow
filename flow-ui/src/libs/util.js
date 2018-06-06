@@ -7,7 +7,6 @@
  */
 
 import axios from 'axios';
-import env from '../../build/env';
 import Cookies from 'js-cookie';
 import { Message } from 'iview';
 
@@ -19,11 +18,7 @@ util.title = function (title) {
   window.document.title = title;
 };
 
-const ajaxUrl = env === 'development'
-  ? 'http://localhost:2020'
-  : env === 'production'
-    ? 'https://www.url.com'
-    : 'https://debug.url.com';
+const ajaxUrl = 'http://localhost:2020';
 
 util.ajax = axios.create({
   baseURL: ajaxUrl,
