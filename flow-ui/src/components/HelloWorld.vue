@@ -9,7 +9,7 @@
           <Step title="待进行" content="这里是该步骤的描述信息"></Step>
           <Step title="待进行" content="这里是该步骤的描述信息"></Step>
         </Steps>
-        <Form :model="checkMsgForm" :rules="checkMsgRule">
+        <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
 
         </Form>
       </Card>
@@ -22,10 +22,28 @@
 export default {
   name: 'HelloWorld',
   data () {
+    const validateAge = (rule, value, callback) => {
+      if (!value) {
+        return callback(new Error('Age cannot be empty'));
+      }
+      // 模拟异步验证效果
+      setTimeout(() => {
+        if (!Number.isInteger(value)) {
+          callback(new Error('Please enter a numeric value'));
+        } else {
+          if (value < 18) {
+            callback(new Error('Must be over 18 years of age'));
+          } else {
+            callback();
+          }
+        }
+      }, 1000);
+    };
+
     return {
       checkMsgForm: {
         name: '',
-        sex: 1,
+        age: 1,
         headPic: ''
       },
       checkMsgRule: {
@@ -42,13 +60,25 @@ export default {
             message: 'the username size shall be no more than 10 chars and no less than 5 chars ',
             trigger: 'blur'
           }
+        ],
+        age: [
+          {
+            validator: validateAge,
+            trigger: 'blur'
+          }
         ]
-      }
+      },
     }
   },
   methods: {
     handleSubmit (name) {
-
+      this.$refs[name].validate((valid) => {
+        if (valid) {
+          this.$Message.success('Success!');
+        } else {
+          this.$Message.error('Fail!');
+        }
+      });
     }
   }
 }
