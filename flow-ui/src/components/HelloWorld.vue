@@ -3,11 +3,11 @@
   <Row>
     <Col span="18" offset="3">
       <Card>
-        <Steps :current="2">
-          <Step title="已完成" content="这里是该步骤的描述信息"></Step>
-          <Step title="进行中" content="这里是该步骤的描述信息"></Step>
-          <Step title="待进行" content="这里是该步骤的描述信息"></Step>
-          <Step title="待进行" content="这里是该步骤的描述信息"></Step>
+        <Steps :current="0">
+          <Step title="提交基础信息" content="上传基础用户信息"></Step>
+          <Step title="初核" content="审核基础信息"></Step>
+          <Step title="复审" content="复审基础信息"></Step>
+          <Step title="审核结果" content="展示审核结果"></Step>
         </Steps>
         <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
           <FormItem label="用户名" prop="name">
