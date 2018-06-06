@@ -47,11 +47,7 @@ util.post = function (url, data) {
     (response) => {
       return this.checkStatus(response);
     }
-  ).then(
-    (res) => {
-      return this.checkCode(res);
-    }
-  );
+  )
 };
 
 util.checkStatus = function checkStatus (response) {

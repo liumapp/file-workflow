@@ -79,8 +79,9 @@ export default {
     handleSubmit (name) {
       this.$refs[name].validate((valid) => {
         if (valid) {
-
-          this.$Message.success('Success!');
+          util.post('/info', this.checkMsgForm).then(res => {
+            this.$Message.success('Success!');
+          });
         } else {
           this.$Message.error('Fail!');
         }
