@@ -10,7 +10,16 @@
           <Step title="待进行" content="这里是该步骤的描述信息"></Step>
         </Steps>
         <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
-
+          <FormItem label="用户名" prop="name">
+            <Input type="text" v-model="checkMsgForm.name"></Input>
+          </FormItem>
+          <FormItem label="年龄" prop="age">
+            <Input type="text" v-model="checkMsgForm.age" number></Input>
+          </FormItem>
+          <FormItem>
+            <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
+            <Button type="ghost" @click="handleReset('checkMsgForm')">Reset</Button>
+          </FormItem>
         </Form>
       </Card>
     </Col>
@@ -42,8 +51,8 @@ export default {
 
     return {
       checkMsgForm: {
-        name: '',
-        age: 1,
+        name: '用户名称',
+        age: 22,
         headPic: ''
       },
       checkMsgRule: {
@@ -79,6 +88,9 @@ export default {
           this.$Message.error('Fail!');
         }
       });
+    },
+    handleReset (name) {
+      this.$refs[name].resetFields();
     }
   }
 }
