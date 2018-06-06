@@ -19,7 +19,7 @@ public class IndexController {
 
     @RequestMapping("/info")
     public String handleForm (@RequestBody User user) {
-        return JSON.toJSONString();
+        return JSON.toJSONString("success");
     }
 
 }
