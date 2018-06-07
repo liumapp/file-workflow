@@ -96,7 +96,7 @@ export default {
       this.$refs[name].resetFields();
     },
     handlePic (file) {
-      this.headPic=file.name;
+      this.checkMsgForm.headPic=file.name;
     }
   }
 }

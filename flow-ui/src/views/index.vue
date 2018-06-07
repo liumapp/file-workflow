@@ -17,9 +17,9 @@
             <Step title="审核结果" content="展示审核结果"></Step>
           </Steps>
           <upload-form v-if="current == 0" @setFormData="setFormData" @next="nextStep"></upload-form>
-          <first-check v-if="current == 1" @next="nextStep" :formData="formData"></first-check>
-          <second-check v-if="current == 2" @next="nextStep"></second-check>
-          <result v-if="current == 3" @next="nextStep"></result>
+          <first-check v-if="current == 1" @next="nextStep" @prev="prevStep" :formData="formData"></first-check>
+          <second-check v-if="current == 2" @next="nextStep" @prev="prevStep"></second-check>
+          <result v-if="current == 3" @prev="prevStep"></result>
         </Card>
       </Col>
     </Row>

@@ -9,7 +9,9 @@
 <div>
   用户名: {{ data.name }}<br>
   年龄: {{ data.age }} <br>
-  头像: <img :src="util.ajaxUrl + '/file/get?filename=' + data.headPic" width="200"><br>
+  头像: <img :src="picUrl" width="200"><br>
+  <Button type="primary" @click="access()">通过</Button>
+  <Button type="ghost" @click="refuse()">拒绝</Button>
 </div>
 </template>
 <script>
@@ -21,11 +23,22 @@ export default {
   ],
   data () {
     return {
-      data: {}
+      data: {},
+      picUrl: ''
     }
   },
   created () {
     this.data = this.formData;
+    this.picUrl = util.ajaxUrl + '/file/get?filename=' + this.data.headPic;
+    console.log(this.picUrl);
+  },
+  methods: {
+    access () {
+      this.$emit('next');
+    },
+    refuse () {
+      this.$emit('prev');
+    }
   }
 }
 </script>
