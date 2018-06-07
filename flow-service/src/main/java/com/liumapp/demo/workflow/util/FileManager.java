@@ -20,7 +20,8 @@ public class FileManager {
     private String savepath;
 
     public void save (MultipartFile file) throws IOException {
-        file.transferTo(new File(savepath + file.getOriginalFilename()));
+        File destFile = new File(savepath + file.getOriginalFilename());
+        file.transferTo(destFile);
     }
 
     public String getSavepath() {
