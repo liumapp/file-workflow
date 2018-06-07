@@ -4,3 +4,8 @@ spring:
   application:
     name: flow-service
 
+liumapp:
+  file:
+    savepath: /usr/local/tomcat/project/file-workflow/flow-service/pic/
+
+

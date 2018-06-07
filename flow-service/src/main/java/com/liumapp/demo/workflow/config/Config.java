@@ -1,5 +1,6 @@
 package com.liumapp.demo.workflow.config;
 
+import com.liumapp.demo.workflow.util.FileManager;
 import org.springframework.context.annotation.Configuration;
 import org.springframework.web.servlet.config.annotation.CorsRegistry;
 import org.springframework.web.servlet.config.annotation.WebMvcConfigurerAdapter;
@@ -13,6 +14,10 @@ public class Config extends WebMvcConfigurerAdapter {
                 .allowedMethods("*")
                 .allowedOrigins("*")
                 .allowCredentials(true);
+    }
+
+    public FileManager fileManager () {
+        return new FileManager();
     }
 
 }

@@ -2,6 +2,8 @@ package com.liumapp.demo.workflow.util;
 
 import org.springframework.stereotype.Component;
 
+import java.io.InputStream;
+
 /**
  * @author liumapp
  * @file FileManager.java
@@ -12,6 +14,17 @@ import org.springframework.stereotype.Component;
 @Component
 public class FileManager {
 
+    private String savepath;
 
+    public void save (InputStream inputStream , String path) {
 
+    }
+
+    public String getSavepath() {
+        return savepath;
+    }
+
+    public void setSavepath(String savepath) {
+        this.savepath = savepath;
+    }
 }
