@@ -16,7 +16,7 @@
             <Step title="复审" content="复审基础信息"></Step>
             <Step title="审核结果" content="展示审核结果"></Step>
           </Steps>
-          <upload-form v-if="current == 0" @next="nextStep"></upload-form>
+          <upload-form v-if="current == 0" @setFormData="setFormData" @next="nextStep"></upload-form>
           <first-check v-if="current == 1" @next="nextStep"></first-check>
           <second-check v-if="current == 2" @next="nextStep"></second-check>
           <result v-if="current == 3" @next="nextStep"></result>
@@ -39,18 +39,20 @@
     },
     data () {
       return {
-        current: 0
+        current: 0,
+        formData: {}
       }
     },
     methods: {
+      setFormData (data) {
+        this.formData = data;
+      },
       nextStep () {
         this.current++;
       },
       prevStep () {
         this.current--;
       }
-    },
-    created () {
     }
   }
 </script>

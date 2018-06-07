@@ -84,6 +84,7 @@ export default {
         if (valid) {
           util.post('/info', this.checkMsgForm).then(res => {
             this.$Message.success('Success!');
+            this.$emit('setFormData', this.checkMsgForm);
             this.$emit('next');
           });
         } else {
