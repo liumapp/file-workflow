@@ -6,10 +6,26 @@
  * @date 6/7/18
  */
 <template>
-<div>this is first check</div>
+<div>
+  用户名: {{ data.name }}<br>
+  年龄: {{ data.age }} <br>
+  头像: <img :src="util.ajaxUrl + '/file/get?filename=' + data.headPic" width="200"><br>
+</div>
 </template>
 <script>
+import util from '@/libs/util';
 export default {
-  name: 'firstCheck'
+  name: 'firstCheck',
+  props: [
+    'formData'
+  ],
+  data () {
+    return {
+      data: {}
+    }
+  },
+  created () {
+    this.data = this.formData;
+  }
 }
 </script>
