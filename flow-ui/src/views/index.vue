@@ -24,7 +24,9 @@
             <Input type="text" v-model="checkMsgForm.age" number></Input>
           </FormItem>
           <FormItem label="头像" prop="headPic">
-            <single-img-upload id="head-pic-upload" :uploadUrl="uploadUrl"></single-img-upload>
+            <single-img-upload id="head-pic-upload"
+                               :uploadUrl="uploadUrl"
+                               @imgInfo="handlePic" ></single-img-upload>
           </FormItem>
           <FormItem>
             <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
@@ -106,6 +108,9 @@
       },
       handleReset (name) {
         this.$refs[name].resetFields();
+      },
+      handlePic (file) {
+        this.headPic=file.name;
       }
     },
     created () {
