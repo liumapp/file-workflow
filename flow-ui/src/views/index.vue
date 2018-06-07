@@ -24,9 +24,7 @@
             <Input type="text" v-model="checkMsgForm.age" number></Input>
           </FormItem>
           <FormItem label="头像" prop="headPic">
-            <Upload :action="uploadUrl">
-              <Button type="ghost" icon="ios-cloud-upload-outline">上传文件</Button>
-            </Upload>
+            <single-img-upload id="head-pic-upload" :uploadUrl="uploadUrl"></single-img-upload>
           </FormItem>
           <FormItem>
             <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
@@ -41,8 +39,12 @@
 
 <script>
   import util from '@/libs/util';
+  import SingleImgUpload from '@/components/SingleImgUpload';
   export default {
     name: 'HelloWorld',
+    components: {
+      SingleImgUpload
+    },
     data () {
       const validateAge = (rule, value, callback) => {
         if (!value) {
