@@ -42,10 +42,14 @@
 <script>
   import util from '@/libs/util';
   import SingleImgUpload from '@/components/SingleImgUpload';
+  import uploadForm from '@/components/uploadForm';
+  import firstCheck from '@/components/firstCheck';
+  import secondCheck from '@/components/secondCheck';
+  import result from '@/components/result';
   export default {
     name: 'HelloWorld',
     components: {
-      SingleImgUpload
+      uploadForm,firstCheck,secondCheck,result,SingleImgUpload
     },
     data () {
       const validateAge = (rule, value, callback) => {
