@@ -6,6 +6,10 @@
  * @date 6/7/18
  */
 <template>
+<div>this is upload form</div>
 </template>
 <script>
+export default {
+  name: 'uploadForm'
+}
 </script>

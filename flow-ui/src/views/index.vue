@@ -16,6 +16,10 @@
           <Step title="复审" content="复审基础信息"></Step>
           <Step title="审核结果" content="展示审核结果"></Step>
         </Steps>
+        <upload-form v-if="current == 0"></upload-form>
+        <first-check v-if="current == 1"></first-check>
+        <second-check v-if="current == 2"></second-check>
+        <result v-if="current == 3"></result>
         <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
           <FormItem label="用户名" prop="name">
             <Input type="text" v-model="checkMsgForm.name"></Input>
