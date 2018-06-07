@@ -1,7 +1,10 @@
 package com.liumapp.demo.workflow.util;
 
 import org.springframework.stereotype.Component;
+import org.springframework.web.multipart.MultipartFile;
 
+import java.io.File;
+import java.io.IOException;
 import java.io.InputStream;
 
 /**
@@ -16,8 +19,8 @@ public class FileManager {
 
     private String savepath;
 
-    public void save (InputStream inputStream , String path) {
-
+    public void save (MultipartFile file) throws IOException {
+        file.transferTo(new File(savepath + file.getOriginalFilename()));
     }
 
     public String getSavepath() {

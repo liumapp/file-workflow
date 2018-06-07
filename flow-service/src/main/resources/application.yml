@@ -5,7 +5,7 @@ spring:
     name: flow-service
 
 liumapp:
-  file:
+  filemanager:
     savepath: /usr/local/tomcat/project/file-workflow/flow-service/pic/
 
 

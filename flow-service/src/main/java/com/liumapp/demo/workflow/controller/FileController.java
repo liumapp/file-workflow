@@ -7,6 +7,8 @@ import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.bind.annotation.RestController;
 import org.springframework.web.multipart.MultipartFile;
 
+import java.io.IOException;
+
 /**
  * @author liumapp
  * @file FileController.java
@@ -21,10 +23,8 @@ public class FileController {
     private FileManager fileManager;
 
     @RequestMapping("/")
-    public String upload (@RequestParam("file") MultipartFile file) {
-        String fileName = file.getOriginalFilename();
-        String type = fileName.substring(fileName.lastIndexOf("."));
-        
+    public String upload (@RequestParam("file") MultipartFile file) throws IOException {
+        fileManager.save(file);
         return JSON.toJSONString("success");
     }
 
