@@ -56,73 +56,19 @@
       uploadForm,firstCheck,secondCheck,result,SingleImgUpload
     },
     data () {
-      const validateAge = (rule, value, callback) => {
-        if (!value) {
-          return callback(new Error('Age cannot be empty'));
-        }
-        // 模拟异步验证效果
-        setTimeout(() => {
-          if (!Number.isInteger(value)) {
-            callback(new Error('Please enter a numeric value'));
-          } else {
-            if (value < 18) {
-              callback(new Error('Must be over 18 years of age'));
-            } else {
-              callback();
-            }
-          }
-        }, 1000);
-      };
-
       return {
-        uploadUrl: util.ajaxUrl + 'file/',
-        checkMsgForm: {
-          name: '用户名称呢',
-          age: 22,
-          headPic: ''
-        },
-        checkMsgRule: {
-          name: [
-            {
-              type: 'string',
-              min: 5,
-              max: 10,
-              message: 'the username size shall be no more than 10 chars and no less than 5 chars ',
-              trigger: 'blur'
-            }
-          ],
-          age: [
-            {
-              validator: validateAge,
-              trigger: 'blur'
-            }
-          ]
-        },
         current: 0
       }
     },
     methods: {
-      handleSubmit (name) {
-        this.$refs[name].validate((valid) => {
-          if (valid) {
-            util.post('/info', this.checkMsgForm).then(res => {
-              this.current++;
-              this.$Message.success('Success!');
-            });
-          } else {
-            this.$Message.error('Fail!');
-          }
-        });
+      nextStep () {
+        this.current++;
       },
-      handleReset (name) {
-        this.$refs[name].resetFields();
-      },
-      handlePic (file) {
-        this.headPic=file.name;
+      prevStep () {
+        this.current--;
       }
     },
     created () {
-      console.log(this.uploadUrl);
     }
   }
 </script>
