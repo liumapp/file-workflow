@@ -16,10 +16,10 @@
             <Step title="复审" content="复审基础信息"></Step>
             <Step title="审核结果" content="展示审核结果"></Step>
           </Steps>
-          <upload-form v-if="current == 0"></upload-form>
-          <first-check v-if="current == 1"></first-check>
-          <second-check v-if="current == 2"></second-check>
-          <result v-if="current == 3"></result>
+          <upload-form v-if="current == 0" @next="nextStep"></upload-form>
+          <first-check v-if="current == 1" @next="nextStep"></first-check>
+          <second-check v-if="current == 2" @next="nextStep"></second-check>
+          <result v-if="current == 3" @next="nextStep"></result>
         </Card>
       </Col>
     </Row>

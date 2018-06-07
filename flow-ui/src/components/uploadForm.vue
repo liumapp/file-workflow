@@ -83,8 +83,8 @@ export default {
       this.$refs[name].validate((valid) => {
         if (valid) {
           util.post('/info', this.checkMsgForm).then(res => {
-            this.current++;
             this.$Message.success('Success!');
+            this.$emit('next');
           });
         } else {
           this.$Message.error('Fail!');
