@@ -6,7 +6,9 @@
  * @date 6/7/18
  */
 <template>
-<div>this is result</div>
+<div>
+  this is result
+</div>
 </template>
 <script>
 export default {

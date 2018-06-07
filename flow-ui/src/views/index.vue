@@ -19,7 +19,7 @@
           <upload-form v-if="current == 0" @setFormData="setFormData" @next="nextStep"></upload-form>
           <first-check v-if="current == 1" @next="nextStep" @prev="prevStep" :formData="formData"></first-check>
           <second-check v-if="current == 2" @next="nextStep" @prev="prevStep"></second-check>
-          <result v-if="current == 3" @prev="prevStep"></result>
+          <result v-if="current == 3"></result>
         </Card>
       </Col>
     </Row>

@@ -17,7 +17,6 @@
       <SingleImgUpload id="head-pic-upload"
                          :uploadUrl="uploadUrl"
                          @imgInfo="handlePic" ></SingleImgUpload>
-
     </FormItem>
     <FormItem>
       <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
@@ -49,7 +48,7 @@ export default {
             callback();
           }
         }
-      }, 1000);
+      }, 200);
     };
 
     return {
