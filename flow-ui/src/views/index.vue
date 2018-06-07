@@ -23,6 +23,11 @@
           <FormItem label="年龄" prop="age">
             <Input type="text" v-model="checkMsgForm.age" number></Input>
           </FormItem>
+          <FormItem label="头像" prop="headPic">
+            <Upload :action="uploadUrl">
+              <Button type="ghost" icon="ios-cloud-upload-outline">上传文件</Button>
+            </Upload>
+          </FormItem>
           <FormItem>
             <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
             <Button type="ghost" @click="handleReset('checkMsgForm')">Reset</Button>
@@ -58,6 +63,7 @@
       };
 
       return {
+        uploadUrl: util.ajaxUrl + 'file/',
         checkMsgForm: {
           name: '用户名称呢',
           age: 22,
@@ -99,6 +105,9 @@
       handleReset (name) {
         this.$refs[name].resetFields();
       }
+    },
+    created () {
+      console.log(this.uploadUrl);
     }
   }
 </script>

@@ -18,7 +18,9 @@ util.title = function (title) {
   window.document.title = title;
 };
 
-const ajaxUrl = 'http://localhost:2020';
+const ajaxUrl = 'http://localhost:2020/';
+
+util.ajaxUrl = ajaxUrl;
 
 util.ajax = axios.create({
   baseURL: ajaxUrl,
