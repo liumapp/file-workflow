@@ -6,7 +6,6 @@
  * @date 6/7/18
  */
 <template>
-<div>this is upload form</div>
   <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
     <FormItem label="用户名" prop="name">
       <Input type="text" v-model="checkMsgForm.name"></Input>
@@ -15,9 +14,10 @@
       <Input type="text" v-model="checkMsgForm.age" number></Input>
     </FormItem>
     <FormItem label="头像" prop="headPic">
-      <single-img-upload id="head-pic-upload"
+      <SingleImgUpload id="head-pic-upload"
                          :uploadUrl="uploadUrl"
-                         @imgInfo="handlePic" ></single-img-upload>
+                         @imgInfo="handlePic" ></SingleImgUpload>
+
     </FormItem>
     <FormItem>
       <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
@@ -30,9 +30,9 @@ import util from '@/libs/util';
 import SingleImgUpload from '@/components/SingleImgUpload';
 export default {
   name: 'uploadForm',
-  components: [
+  components: {
     SingleImgUpload
-  ],
+  },
   data () {
     const validateAge = (rule, value, callback) => {
       if (!value) {

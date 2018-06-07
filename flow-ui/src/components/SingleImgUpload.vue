@@ -15,7 +15,7 @@
 <script>
 import util from '@/libs/util.js';
 export default {
-  name: 'single-img-upload',
+  name: 'SingleImgUpload',
   props: [
     'uploadUrl'
   ],

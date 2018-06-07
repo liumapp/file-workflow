@@ -9,40 +9,22 @@
   <div>
     <Row>
       <Col span="18" offset="3">
-      <Card>
-        <Steps :current="current">
-          <Step title="提交基础信息" content="上传基础用户信息"></Step>
-          <Step title="初核" content="审核基础信息"></Step>
-          <Step title="复审" content="复审基础信息"></Step>
-          <Step title="审核结果" content="展示审核结果"></Step>
-        </Steps>
-        <upload-form v-if="current == 0"></upload-form>
-        <first-check v-if="current == 1"></first-check>
-        <second-check v-if="current == 2"></second-check>
-        <result v-if="current == 3"></result>
-        <Form ref="checkMsgForm" :model="checkMsgForm" :rules="checkMsgRule">
-          <FormItem label="用户名" prop="name">
-            <Input type="text" v-model="checkMsgForm.name"></Input>
-          </FormItem>
-          <FormItem label="年龄" prop="age">
-            <Input type="text" v-model="checkMsgForm.age" number></Input>
-          </FormItem>
-          <FormItem label="头像" prop="headPic">
-            <single-img-upload id="head-pic-upload"
-                               :uploadUrl="uploadUrl"
-                               @imgInfo="handlePic" ></single-img-upload>
-          </FormItem>
-          <FormItem>
-            <Button type="primary" @click="handleSubmit('checkMsgForm')">Submit</Button>
-            <Button type="ghost" @click="handleReset('checkMsgForm')">Reset</Button>
-          </FormItem>
-        </Form>
-      </Card>
+        <Card>
+          <Steps :current="current">
+            <Step title="提交基础信息" content="上传基础用户信息"></Step>
+            <Step title="初核" content="审核基础信息"></Step>
+            <Step title="复审" content="复审基础信息"></Step>
+            <Step title="审核结果" content="展示审核结果"></Step>
+          </Steps>
+          <upload-form v-if="current == 0"></upload-form>
+          <first-check v-if="current == 1"></first-check>
+          <second-check v-if="current == 2"></second-check>
+          <result v-if="current == 3"></result>
+        </Card>
       </Col>
     </Row>
   </div>
 </template>
-
 <script>
   import util from '@/libs/util';
   import SingleImgUpload from '@/components/SingleImgUpload';
