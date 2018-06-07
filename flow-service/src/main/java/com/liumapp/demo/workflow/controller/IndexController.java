@@ -22,6 +22,4 @@ public class IndexController {
         return JSON.toJSONString("success");
     }
 
-
-
 }
