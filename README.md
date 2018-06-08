@@ -19,6 +19,10 @@ Display the file upload workflow with iView
 
 	![4.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/4.jpg)
 
+* and docker service is : 
+
+	![5.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/5.jpg)	
+
 ## attention
 
 * if you want to rebuilt flow-ui , plz run :
