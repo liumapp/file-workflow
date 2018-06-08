@@ -18,7 +18,7 @@ util.title = function (title) {
   window.document.title = title;
 };
 
-const ajaxUrl = 'http://flow-service:2020/';
+const ajaxUrl = 'http://localhost:2020/';
 
 util.ajaxUrl = ajaxUrl;
 
