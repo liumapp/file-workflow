@@ -6,6 +6,6 @@ spring:
 
 liumapp:
   filemanager:
-    savepath: /usr/local/tomcat/project/file-workflow/flow-service/pic/
+    savepath: /pic/
 
 
