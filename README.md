@@ -1,6 +1,8 @@
 # file-workflow
 Display the file upload workflow with iView
 
+[中文文档](http://www.liumapp.com/articles/2018/06/08/1528438647472.html)
+
 ## how to use
 
 * run ./build-image.sh
