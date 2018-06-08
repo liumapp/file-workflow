@@ -1,6 +1,16 @@
 version: '2'
 
 services:
+  flow-service:
+    container_name: flow-service
+    restart: always
+    image: liumapp/flow-service:v1.0.0
+    ports:
+      - 2020:2020
+    volumes:
+      - ./pic:/pic
+    networks:
+      - flow-net  
   nginx:
     container_name: nginx
     restart: always
@@ -13,3 +23,7 @@ services:
       - ./conf/vhosts:/etc/nginx/conf.d
       - ./logs:/var/log/nginx
       - ./www/:/var/www/
+
+networks:
+  flow-net:
+    driver: bridge      
