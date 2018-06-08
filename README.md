@@ -11,7 +11,13 @@ Display the file upload workflow with iView
 
 * you can find the result here : 
 
+	![1.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/1.jpg)
 
+	![2.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/2.jpg)
+
+	![3.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/3.jpg)
+
+	![4.jpg](https://github.com/liumapp/file-workflow/blob/master/pic/4.jpg)
 
 ## attention
 
@@ -31,4 +37,3 @@ Display the file upload workflow with iView
 
 		./build-image.sh			
 
-		
