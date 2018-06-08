@@ -1,0 +1,96 @@
+2018/05/14 02:02:20 [error] 9#9: *2 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
+2018/05/14 02:38:51 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:38:53 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:38:54 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:38:58 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:00 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:02 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:07 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:14 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:27 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:39:53 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:40:28 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:29 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:30 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:31 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:35 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:38 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:43 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:40:50 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:6
+2018/05/14 02:41:04 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:05 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:06 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:07 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:08 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:14 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:18 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:25 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:9
+2018/05/14 02:41:39 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:4
+2018/05/14 02:43:02 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:03 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:04 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:05 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:11 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:13 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:17 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:43:24 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:3
+2018/05/14 02:44:51 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:44:52 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:44:53 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:44:55 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:44:56 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:44:58 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:45:03 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:45:13 [emerg] 1#1: "pid" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:45:26 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:45:53 [emerg] 1#1: "access_log" directive is not allowed here in /etc/nginx/nginx.conf:2
+2018/05/14 02:46:24 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:46:25 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:46:27 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:46:28 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:46:29 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:46:34 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:46:38 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:46:45 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:46:58 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:47:25 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:48:16 [emerg] 1#1: "events" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:5
+2018/05/14 02:49:17 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:49:39 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:49:40 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:49:42 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:49:44 [emerg] 1#1: "worker_rlimit_nofile" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:50:08 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:50:11 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:50:12 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:50:13 [emerg] 1#1: "worker_processes" directive is not allowed here in /etc/nginx/conf.d/nginx.conf:2
+2018/05/14 02:50:25 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:29
+2018/05/14 02:50:26 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:29
+2018/05/14 02:50:27 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:29
+2018/05/14 02:50:28 [emerg] 1#1: "daemon" directive is duplicate in /etc/nginx/nginx.conf:29
+2018/05/14 02:58:00 [error] 8#8: *1 open() "/usr/share/nginx/html/q/1010000014430026" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /q/1010000014430026 HTTP/1.1", host: "baimeida.com.cn.segmentfault.com", referrer: "https://www.baidu.com/link?url=8qnjx6lXBm79Hw1g9jtIHNbSIfHeUAY9L_ozk2KCR0D9PnfwJJwa_kHcR_Uuq_8OGzort7cE5VaZN42KlQ7I5CtDTDDjO21Hbo7oynuO1Gi&wd=&eqid=a7c86fb600006286000000065af8fb1f"
+2018/05/14 02:58:00 [error] 8#8: *1 open() "/usr/share/nginx/html/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "baimeida.com.cn.segmentfault.com", referrer: "http://baimeida.com.cn.segmentfault.com/q/1010000014430026"
+2018/05/14 03:44:53 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:44:56 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:44:57 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:44:58 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:44:59 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:45:05 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:45:09 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:45:16 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:45:29 [emerg] 1#1: invalid parameter "testa.com" in /etc/nginx/conf.d/testa.conf:2
+2018/05/14 03:45:56 [emerg] 1#1: invalid parameter "testb.com" in /etc/nginx/conf.d/testb.conf:2
+2018/05/14 03:46:19 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:20 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:21 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:22 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:26 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:28 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:32 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:39 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:46:52 [emerg] 1#1: open() "/var/log/nginx/log/test_a_error.log" failed (2: No such file or directory)
+2018/05/14 03:47:35 [error] 8#8: *1 "/var/www/html/public/testa/index.html" is not found (2: No such file or directory), client: 172.18.0.1, server: testa.com, request: "GET / HTTP/1.1", host: "localhost"
+2018/05/14 06:06:43 [error] 8#8: *2 open() "/var/www/testa/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testa.com, request: "GET /favicon.ico HTTP/1.1", host: "testa.com", referrer: "http://testa.com/"
+2018/05/14 06:10:36 [error] 9#9: *12 open() "/var/www/testa/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testa.com, request: "GET /favicon.ico HTTP/1.1", host: "testb.com"
+2018/05/14 06:19:30 [error] 8#8: *1 open() "/var/www/testb/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testb.com, request: "GET /favicon.ico HTTP/1.1", host: "testb.com:5050"
+2018/05/14 06:19:41 [error] 8#8: *2 open() "/var/www/testa/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testa.com, request: "GET /favicon.ico HTTP/1.1", host: "testa.com"
