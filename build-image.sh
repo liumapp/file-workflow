@@ -12,5 +12,9 @@ echo '$                                                           $'
 echo '============================================================='
 echo '.'
 
+cd flow-service
+
+mvn clean package -DskipTests=true docker:build
+
 docker pull nginx:1.13
 
