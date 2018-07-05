@@ -30,7 +30,6 @@ export default {
   created () {
     this.data = this.formData;
     this.picUrl = util.ajaxUrl + '/file/get?filename=' + this.data.headPic;
-    console.log(this.picUrl);
   },
   methods: {
     access () {

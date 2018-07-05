@@ -94,3 +94,4 @@
 2018/05/14 06:10:36 [error] 9#9: *12 open() "/var/www/testa/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testa.com, request: "GET /favicon.ico HTTP/1.1", host: "testb.com"
 2018/05/14 06:19:30 [error] 8#8: *1 open() "/var/www/testb/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testb.com, request: "GET /favicon.ico HTTP/1.1", host: "testb.com:5050"
 2018/05/14 06:19:41 [error] 8#8: *2 open() "/var/www/testa/favicon.ico" failed (2: No such file or directory), client: 172.18.0.1, server: *.testa.com, request: "GET /favicon.ico HTTP/1.1", host: "testa.com"
+2018/06/14 11:01:58 [error] 8#8: *7 open() "/var/www/flowui/favicon.ico" failed (2: No such file or directory), client: 172.20.0.1, server: localhost, request: "GET /favicon.ico HTTP/1.1", host: "localhost", referrer: "http://localhost/"
